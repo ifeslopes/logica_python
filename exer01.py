@@ -1,0 +1,31 @@
+matri=int(input("entre com matricula"))
+not1=int(input("entre com nota1"))
+not2=int(input("entre com nota2"))
+not3=int(input("entre com nota3"))
+me=int(input("entre com à média"))
+ma=float((not1+not2*2+not3*3+me*7)/13)
+if (90<=ma):
+	print("O N° da matricula e",matri)
+	print("Conceito: A")
+	print("Situação: Aprovado")
+	print("Media final: %d" %(ma))
+elif 75 <= ma <90 :
+	print("O N° da matricula e",matri)
+	print("Conceito: B")
+	print("Situação: Aprovado")	
+	print("Media final: %d" %(ma))
+elif 60 <= ma <75:
+	print("O N° da matricula e",matri)
+	print("Conceito: C")
+	print("Situação: Recuperação")
+	print("Media final: %d" %(ma))
+elif 50 <= ma <60:
+	print("O N° da matricula e",matri)
+	print("Conceito: D")
+	print("Situação: Recuperação")
+	print("Media final: %d" %(ma))
+elif 50 >ma :
+	print("O N° da matricula e",matri)
+	print("Conceito: E")
+	print("Situação: Reprovado")
+	print("Media final: %d" %(ma))
